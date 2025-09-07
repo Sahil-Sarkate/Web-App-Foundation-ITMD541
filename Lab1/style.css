@@ -141,3 +141,13 @@
     }
   }
   
+  /* Contact section - make links white */
+#contact a {
+    color: #ffffff;         /* makes the links white */
+    text-decoration: none;  /* optional: remove underline */
+  }
+  
+  #contact a:hover {
+    color: var(--accent);   /* optional: highlight blue when hovering */
+  }
+  
