@@ -1,150 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sahil Sarkate — Resume</title>
-  <!-- Google Fonts (meets 541 requirement) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Sarkate — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Resume website for Sahil Sarkate — MS ITM student focused on SAP and web technologies." />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="Lab1/DSC_2581.jpg" alt="Professional headshot of Sahil Sarkate" class="avatar" />
-        <div>
-          <h1 class="name">Sahil Sarkate</h1>
-          <p class="tagline">Aspiring SAP Consultant · Web Developer</p>
-        </div>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-content">
+      <h1>Hi, I’m <span>Sahil Sarkate</span></h1>
+      <p class="tagline">SAP Enthusiast · Data-Driven ITM Graduate Student</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="documents/Sahil_Sarkate_Resume.pdf" target="_blank" class="btn secondary">Download Resume</a>
       </div>
-      <nav class="site-nav" aria-label="Primary" role="navigation">
-        <ul>
-          <li><a href="#summary">Summary</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <main id="main" class="site-main" role="main">
-    <!-- Summary -->
-    <section id="summary" class="section">
-      <div class="container">
-        <h2 class="section-title">Summary</h2>
-        <p>
-          MS‑ITM graduate student focused on ERP and web technologies. Hands-on with HTML/CSS,
-          Git/GitHub, and responsive design; learning SAP S/4HANA modules (SD, MM, PP, FI/CO, HCM), Fiori, HANA,
-          and SAP Activate. Passionate about building clean, accessible, and mobile‑first interfaces.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <article class="item">
-          <div class="item-head">
-            <h3>Illinois Institute of Technology — MS Information Technology & Management</h3>
-            <span class="meta">Expected May 2026 · Chicago, IL</span>
-          </div>
-          <p>Coursework: Web Dev, Big Data Infrastructure, Service‑Oriented Architectures, Project Management.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <ul class="skills">
-          <li>HTML5 & Semantic Markup</li>
-          <li>Modern CSS (Flexbox/Grid)</li>
-          <li>Responsive Design</li>
-          <li>Git & GitHub</li>
-          <li>Accessibility (alt text, skip link)</li>
-          <li>SAP S/4HANA (SD, MM, PP, FI/CO, HCM)</li>
-          <li>Fiori · HANA · SAP Activate (Foundations)</li>
-          <li>Teamwork & Communication</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <article class="item">
-          <div class="item-head">
-            <h3>IT Support Desk Assistant <span class="at">@ IIT</span></h3>
-            <span class="meta">2024 — Present · Chicago, IL</span>
-          </div>
-          <ul class="bullets">
-            <li>Resolved 100+ tickets involving account access, device setup, and classroom A/V issues.</li>
-            <li>Created concise runbooks and improved first‑response quality through templates.</li>
-            <li>Collaborated with cross‑functional teams to triage priority incidents.</li>
-          </ul>
-        </article>
-        <article class="item">
-          <div class="item-head">
-            <h3>Project/Academic Work</h3>
-            <span class="meta">2024 — 2025</span>
-          </div>
-          <ul class="bullets">
-            <li>Opportunity & Territory Sales Dashboard (Power BI): interactive KPIs, trends, and filters.</li>
-            <li>Violation‑Eye: AI traffic violation prototype using Python (YOLOv8) and OpenCV.</li>
-            <li>MySQL ↔︎ Spark Proof‑of‑Concept: data ingestion and JDBC pipelines on a cluster.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <article class="project-card">
-          <div class="project-card__body">
-            <h3>Resume Site (This Project)</h3>
-            <p>Semantically structured and fully responsive resume site hosted on GitHub Pages.</p>
-            <a class="btn" href="https://github.com/your-username/resume-site" target="_blank" rel="noopener">GitHub Repo</a>
-            <a class="btn btn-secondary" href="https://your-username.github.io/resume-site/" target="_blank" rel="noopener">Live Demo</a>
-          </div>
-          <figure class="project-card__media">
-            <img src="images/project-screenshot.jpg" alt="Screenshot of the resume site layout featuring a clean header and grid sections" />
-          </figure>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p>
-          <a href="mailto:you@example.com" class="contact-link">you@example.com</a> ·
-          <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="https://github.com/your-username" class="contact-link" target="_blank" rel="noopener">GitHub</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
+  <!-- About -->
+  <section id="about" class="section">
     <div class="container">
-      <p>© <span id="year"></span> Sahil Sarkate. Hosted on GitHub Pages.</p>
+      <h2>About Me</h2>
+      <p>I am a graduate student in Information Technology and Management at Illinois Tech with a strong interest in SAP functional and technical modules. I am passionate about ERP, analytics, and building solutions that impact real-world business processes.</p>
     </div>
-    <!-- No JS needed: year can be typed manually if desired for the assignment. -->
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-badges">
+        <li>Power BI</li>
+        <li>SAP S/4HANA</li>
+        <li>Python</li>
+        <li>ABAP</li>
+        <li>ReactJS</li>
+        <li>MySQL</li>
+        <li>Azure</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-content">
+            <h3>Illinois Institute of Technology</h3>
+            <p><strong>M.A.S, Information Technology and Management (MIS)</strong></p>
+            <p>Aug 2024 – May 2026 · GPA: 3.33</p>
+            <p><em>Coursework:</em> Advanced Topics in Data Management, Programming for Data Analysis, Service-Oriented Architecture</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h3>Savitribai Phule Pune University</h3>
+            <p><strong>Bachelor of Engineering, Computer Engineering</strong></p>
+            <p>Dec 2021 – May 2024 · GPA: 3.31</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-content">
+            <h3>Opportunity & Territory Dashboard</h3>
+            <p>Interactive Power BI dashboard for Reliance Mart tracking sales and territory performance.</p>
+            <a href="#" class="btn small">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h3>Formula 1 Data Analysis</h3>
+            <p>Analyzed 70 years of F1 race data using Python and Power BI to uncover performance patterns.</p>
+            <a href="#" class="btn small">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h3>Instagram Ghibli Trend Scraper</h3>
+            <p>Python + Playwright scraper for trending hashtags like #GhibliAI and #PixarAI.</p>
+            <a href="#" class="btn small">View</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card small">SAP Clean Core</div>
+        <div class="card small">SAP Technical Consulting</div>
+        <div class="card small">SAP Sales (S/4HANA)</div>
+        <div class="card small">The Ultimate SAP S/4HANA Course 2025: From Zero to Expert </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ssarkate@hawk.iit.edu">ssarkate@hawk.iit.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-sarkate/" target="_blank">linkedin.com/in/sahil-sarkate</a></p>
+      <p>GitHub: <a href="https://github.com/Sahil-Sarkate" target="_blank">github.com/Sahil-Sarkate</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Sahil Sarkate — Hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
